@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Kw5-rD-uTl" customClass="SunCarousels">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCm-ui-iqY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="index0.png" translatesAutoresizingMaskIntoConstraints="NO" id="E4e-rg-abs">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                        </imageView>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Oh-eD-MpM">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                        </scrollView>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="UT2-bE-gET">
+                            <rect key="frame" x="168" y="328" width="39" height="37"/>
+                        </pageControl>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5j0-Ps-4dh">
+                            <rect key="frame" x="331" y="331" width="34" height="34"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="Pee-yP-05f"/>
+                                <constraint firstAttribute="width" constant="34" id="QDG-d6-X6X"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="17"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="E4e-rg-abs" firstAttribute="leading" secondItem="RCm-ui-iqY" secondAttribute="leading" id="7MS-d1-uah"/>
+                        <constraint firstAttribute="height" constant="375" id="Den-0i-ios"/>
+                        <constraint firstAttribute="bottom" secondItem="5Oh-eD-MpM" secondAttribute="bottom" id="GiL-ic-Xg1"/>
+                        <constraint firstAttribute="trailing" secondItem="E4e-rg-abs" secondAttribute="trailing" id="HCb-4U-m4o"/>
+                        <constraint firstItem="5Oh-eD-MpM" firstAttribute="leading" secondItem="RCm-ui-iqY" secondAttribute="leading" id="IHa-zl-PhT"/>
+                        <constraint firstItem="E4e-rg-abs" firstAttribute="top" secondItem="RCm-ui-iqY" secondAttribute="top" id="VBg-Hi-dAw"/>
+                        <constraint firstAttribute="trailing" secondItem="5j0-Ps-4dh" secondAttribute="trailing" constant="10" id="X3S-P1-6Ru"/>
+                        <constraint firstItem="UT2-bE-gET" firstAttribute="centerX" secondItem="RCm-ui-iqY" secondAttribute="centerX" id="d9b-kv-Td7"/>
+                        <constraint firstItem="5Oh-eD-MpM" firstAttribute="top" secondItem="RCm-ui-iqY" secondAttribute="top" id="dRf-ds-p5i"/>
+                        <constraint firstAttribute="bottom" secondItem="E4e-rg-abs" secondAttribute="bottom" id="fBi-w6-SFK"/>
+                        <constraint firstAttribute="bottom" secondItem="UT2-bE-gET" secondAttribute="bottom" constant="10" id="gue-mW-nof"/>
+                        <constraint firstAttribute="trailing" secondItem="5Oh-eD-MpM" secondAttribute="trailing" id="mpX-3Z-HmC"/>
+                        <constraint firstAttribute="bottom" secondItem="5j0-Ps-4dh" secondAttribute="bottom" constant="10" id="r9j-UN-YMX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RCm-ui-iqY" secondAttribute="bottom" id="AMi-An-ImU"/>
+                <constraint firstAttribute="trailing" secondItem="RCm-ui-iqY" secondAttribute="trailing" id="bts-Qt-TXx"/>
+                <constraint firstItem="RCm-ui-iqY" firstAttribute="leading" secondItem="Kw5-rD-uTl" secondAttribute="leading" id="lKj-jt-DLN"/>
+                <constraint firstItem="RCm-ui-iqY" firstAttribute="top" secondItem="Kw5-rD-uTl" secondAttribute="top" id="oGo-Sj-6m0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="AMi-An-ImU"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="pageControl" destination="UT2-bE-gET" id="ZXu-lK-PtM"/>
+                <outlet property="pageLabel" destination="5j0-Ps-4dh" id="Bz6-eO-YXP"/>
+                <outlet property="scrollView" destination="5Oh-eD-MpM" id="Aez-Sm-fZv"/>
+                <outlet property="scrollView_H" destination="Den-0i-ios" id="zHm-rW-4bC"/>
+                <outlet property="topImage" destination="E4e-rg-abs" id="2UB-uA-0pc"/>
+            </connections>
+            <point key="canvasLocation" x="242.5" y="202.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="index0.png" width="710" height="400"/>
+    </resources>
+</document>
