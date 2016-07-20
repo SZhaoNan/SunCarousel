@@ -23,7 +23,7 @@
     _dataArr = [NSMutableArray arrayWithObjects:@"http://cdn.zmqnw-images.zmqnw.com.cn/broadcast/2016/07/17/8764154704410a1147.jpg?width=1280&height=720", @"http://cdn.zmqnw-images.zmqnw.com.cn/broadcast/2016/07/17/2464155818442a1147.jpg?width=1280&height=720", @"http://cdn.zmqnw-images.zmqnw.com.cn/broadcast/2016/07/17/3064156771499a1147.jpg?width=1280&height=720", @"http://cdn.zmqnw-images.zmqnw.com.cn/broadcast/2016/07/17/5964157767480a1147.jpg?width=1280&height=720", nil];
 //    _dataArr = [NSMutableArray arrayWithObjects:@"index0.png", @"index1.png", @"index2.png", nil];
     _SunCarousels = [[NSBundle mainBundle] loadNibNamed:@"SunCarousels" owner:self options:nil].lastObject;
-    [_SunCarousels awakeScrollViewFromHeight:175 data:_dataArr];
+    [_SunCarousels awakeScrollViewFromHeight:210 data:_dataArr];
     UINib *nib1 = [UINib nibWithNibName:@"SunTableViewCell" bundle:nil];
     [self.tableView registerNib:nib1 forCellReuseIdentifier:@"SunTableViewCell"];
     self.tableView.tableHeaderView = _SunCarousels;
