@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
+                <outlet property="tableView" destination="LqR-zE-vhv" id="gZ1-Xu-ePo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,33 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VcO-CJ-Hjf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="gdt-64-4vq"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LqR-zE-vhv">
+                    <rect key="frame" x="0.0" y="1" width="375" height="666"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2Kt-4R-AUy"/>
+                        <outlet property="delegate" destination="-1" id="IIs-pQ-6Sc"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="0.70980392160000005" green="0.72156862749999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VcO-CJ-Hjf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0Yv-vy-cKQ"/>
+                <constraint firstItem="LqR-zE-vhv" firstAttribute="top" secondItem="VcO-CJ-Hjf" secondAttribute="bottom" id="4Ss-QL-aFS"/>
+                <constraint firstAttribute="trailing" secondItem="LqR-zE-vhv" secondAttribute="trailing" id="H04-kK-ITW"/>
+                <constraint firstItem="LqR-zE-vhv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XtN-7w-iie"/>
+                <constraint firstItem="VcO-CJ-Hjf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aqb-kb-mAJ"/>
+                <constraint firstAttribute="bottom" secondItem="LqR-zE-vhv" secondAttribute="bottom" id="hZT-4m-0uO"/>
+                <constraint firstAttribute="trailing" secondItem="VcO-CJ-Hjf" secondAttribute="trailing" id="sCb-59-pvk"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>

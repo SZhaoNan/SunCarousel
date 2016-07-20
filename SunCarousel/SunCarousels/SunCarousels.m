@@ -140,7 +140,7 @@
 {
     _timeCount = 0;
     
-    _timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(refresh) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(refresh) userInfo:nil repeats:YES];
 }
 - (void)refresh
 {

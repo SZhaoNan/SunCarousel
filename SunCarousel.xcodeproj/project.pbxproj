@@ -19,6 +19,8 @@
 		128754AD1D3CDA3500A94AF3 /* index0.png in Resources */ = {isa = PBXBuildFile; fileRef = 128754AA1D3CDA3500A94AF3 /* index0.png */; };
 		128754AE1D3CDA3500A94AF3 /* index1.png in Resources */ = {isa = PBXBuildFile; fileRef = 128754AB1D3CDA3500A94AF3 /* index1.png */; };
 		128754AF1D3CDA3500A94AF3 /* index2.png in Resources */ = {isa = PBXBuildFile; fileRef = 128754AC1D3CDA3500A94AF3 /* index2.png */; };
+		12F7D4121D3F51B500EC4765 /* SunTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F7D4101D3F51B500EC4765 /* SunTableViewCell.m */; };
+		12F7D4131D3F51B500EC4765 /* SunTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F7D4111D3F51B500EC4765 /* SunTableViewCell.xib */; };
 		AABDFD08E27985FEEB6A7F23 /* libPods-SunCarousel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C39EF97ABBC9AB1BA6FA675C /* libPods-SunCarousel.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,9 @@
 		128754AA1D3CDA3500A94AF3 /* index0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = index0.png; sourceTree = "<group>"; };
 		128754AB1D3CDA3500A94AF3 /* index1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = index1.png; sourceTree = "<group>"; };
 		128754AC1D3CDA3500A94AF3 /* index2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = index2.png; sourceTree = "<group>"; };
+		12F7D40F1D3F51B500EC4765 /* SunTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunTableViewCell.h; sourceTree = "<group>"; };
+		12F7D4101D3F51B500EC4765 /* SunTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunTableViewCell.m; sourceTree = "<group>"; };
+		12F7D4111D3F51B500EC4765 /* SunTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SunTableViewCell.xib; sourceTree = "<group>"; };
 		83319A1B3CE4E32F6121F7F3 /* Pods-SunCarousel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunCarousel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunCarousel/Pods-SunCarousel.debug.xcconfig"; sourceTree = "<group>"; };
 		9DCF76477F1AA4FA370FCB94 /* Pods-SunCarousel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunCarousel.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunCarousel/Pods-SunCarousel.release.xcconfig"; sourceTree = "<group>"; };
 		C39EF97ABBC9AB1BA6FA675C /* libPods-SunCarousel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SunCarousel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +90,9 @@
 				128754A41D3CCC1D00A94AF3 /* ViewController.h */,
 				128754A51D3CCC1D00A94AF3 /* ViewController.m */,
 				128754A61D3CCC1D00A94AF3 /* ViewController.xib */,
+				12F7D40F1D3F51B500EC4765 /* SunTableViewCell.h */,
+				12F7D4101D3F51B500EC4765 /* SunTableViewCell.m */,
+				12F7D4111D3F51B500EC4765 /* SunTableViewCell.xib */,
 				1287548B1D3CC7C100A94AF3 /* Main.storyboard */,
 				1287548E1D3CC7C100A94AF3 /* Assets.xcassets */,
 				128754901D3CC7C100A94AF3 /* LaunchScreen.storyboard */,
@@ -202,6 +210,7 @@
 				128754A81D3CCC1D00A94AF3 /* ViewController.xib in Resources */,
 				128754AD1D3CDA3500A94AF3 /* index0.png in Resources */,
 				128754921D3CC7C100A94AF3 /* LaunchScreen.storyboard in Resources */,
+				12F7D4131D3F51B500EC4765 /* SunTableViewCell.xib in Resources */,
 				1287548F1D3CC7C100A94AF3 /* Assets.xcassets in Resources */,
 				128754AE1D3CDA3500A94AF3 /* index1.png in Resources */,
 				128754A31D3CCA7900A94AF3 /* SunCarousels.xib in Resources */,
@@ -267,6 +276,7 @@
 			files = (
 				128754A11D3CCA5200A94AF3 /* SunCarousels.m in Sources */,
 				128754871D3CC7C100A94AF3 /* AppDelegate.m in Sources */,
+				12F7D4121D3F51B500EC4765 /* SunTableViewCell.m in Sources */,
 				128754A71D3CCC1D00A94AF3 /* ViewController.m in Sources */,
 				128754841D3CC7C100A94AF3 /* main.m in Sources */,
 			);

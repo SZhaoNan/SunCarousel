@@ -21,6 +21,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     ViewController *vc = [[ViewController alloc] init];
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc];
+    nav1.navigationBar.hidden = YES;
     self.window.rootViewController = nav1;
     [self.window makeKeyWindow];
     // Override point for customization after application launch.
